@@ -16,6 +16,7 @@ pub(crate) mod error;
 pub(crate) mod mailer;
 pub(crate) mod models;
 
+// todo(steve): logging
 fn main() -> Result<(), Error> {
     let args: Args = Args::parse();
 

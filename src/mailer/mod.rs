@@ -33,6 +33,7 @@ impl Mailer {
                     .iter()
                     .map(|file| {
                         let body = Body::new(std::fs::read(file)?);
+                        // todo(steve): attempt to get mime type from extension
                         Ok(Attachment::new(file.clone()).body(body, "application/pdf".parse()?))
                     })
                     .collect::<Result<Vec<SinglePart>, Error>>()
