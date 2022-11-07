@@ -1,7 +1,7 @@
 # Thank You Letters
 
-This application reads party / guest information from a CSV file and sends each party a "Thank You" email with the 
-contents built from a template and customized based on their gift (if provided).
+This application reads party / guest information from a CSV file and sends each party an HTML-formatted "Thank You" 
+email with the contents built from a template and customized based on their gift (if provided).
 
 ## Usage
 
@@ -26,3 +26,8 @@ added.
 
 Obviously this repo can not be reused exactly as is... The email template is not generic and must be tailored how you
 would like it.
+
+## Proof
+
+![screenshot](screenshot.png "Screenshot")
+
