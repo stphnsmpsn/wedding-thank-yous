@@ -41,7 +41,7 @@ impl<'de> serde::de::Visitor<'de> for StringVisitor {
     type Value = GiftType;
 
     fn expecting(&self, formatter: &mut std::fmt::Formatter) -> std::fmt::Result {
-        formatter.write_str("an integer between -2^31 and 2^31")
+        formatter.write_str("a string")
     }
 
     fn visit_str<E>(self, v: &str) -> Result<Self::Value, E>
