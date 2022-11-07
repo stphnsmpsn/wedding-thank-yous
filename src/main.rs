@@ -34,7 +34,7 @@ fn main() -> Result<(), Error> {
         match result {
             Ok(party) => {
                 print!("Thanking: {}... ", party.name);
-                std::io::stdout().flush().unwrap();
+                std::io::stdout().flush()?;
                 match mailer.send_email(&party) {
                     Ok(()) => println!("[DONE]"),
                     Err(_) => {
